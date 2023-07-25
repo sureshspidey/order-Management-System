@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Store</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="icon" href="/images/half-moon.png">
+</head>
+<body>
+    <div id="bootstrap"></div>
+    <div id="header"></div>
+    <div class="common-content-style">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <h1>Create order</h1>
+                    <br>
+                    <form id="form"action="javascript:void(0)" onsubmit="orderCreated()" >
+                        <div class="mb-3">
+                          <label for="id" class="form-label">Order ID</label>
+                          <input type="text" class="form-control" required id="id" >
+                          <div id="emailHelp" class="form-text">ID should be unique</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Order Name</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="ima1" class="form-label">Order Image</label>
+                            <input type="file" class="form-control" id="img1" required accept="image/png, image/gif, image/jpeg">
+                        </div>
+                        <div class="mb-3">
+                            <label for="desc" class="form-label">Order description</label>
+                            <textarea type="text" class="form-control" id="desc" minlength="10"></textarea>
+                        </div>
+                         <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

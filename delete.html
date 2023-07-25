@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Store</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="icon" href="/images/half-moon.png">
+</head>
+<body>
+    <div id="bootstrap"></div>
+    <div id="header"></div>
+    <div class="common-content-style">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                  <br />
+                  <h2>Delete Order</h2>
+                  <br />
+                  <button
+                    onclick="getAllOrdersForDelete()"
+                    type="button"
+                    class="btn btn-primary">
+                    Delete Orders
+                  </button>
+                  <br>
+                  <div id="not-found"></div>
+                </div>
+              </div>
+              <br>
+              <div class="row" id="view-order-parent">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Order Id</th>
+                        <th scope="col">Order Name</th>
+                        <th scope="col">Other Description</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                  </table>
+              </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
